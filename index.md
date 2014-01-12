@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Piemme online!
-tagline: {{ site.title }}
+tagline: One bit at a time
 ---
 {% include JB/setup %}
 

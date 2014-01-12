@@ -1,9 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
-<head>
-  <title>Piemme</title>
-</head>
-<body>
-<p>Hi! This is my home page, version 3</p></body>
-</html>
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hello World!
-tagline: Supporting tagline
+title: Piemme online!
+tagline: {{ site.title }}
 ---
 {% include JB/setup %}
 
